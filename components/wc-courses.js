@@ -37,7 +37,7 @@ class CourseCard extends HTMLElement {
             </div>
         `;
 
-        fetch(new URL("components/wc-courses.css", import.meta.url))
+        fetch(new URL("/components/wc-courses.css", import.meta.url))
             .then(response => response.text())
             .then(css => {
                 const style = document.createElement("style");
