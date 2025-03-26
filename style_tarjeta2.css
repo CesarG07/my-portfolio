@@ -1,0 +1,39 @@
+.tarjeta2 main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgb(210, 210, 210);
+}
+
+.img__proyecto{
+    max-width: 40%;
+    margin: 0 20px 0 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img__proyecto img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.proyecto__info{
+    width: 60%;
+    height: auto;
+    max-width: 840px;
+    margin: 0;
+    padding: 10px;
+}
+
+.tarjeta3{
+    margin: 40px auto;
+    margin-top: 0;
+    padding: 20px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
