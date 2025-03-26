@@ -32,7 +32,7 @@ class ExperienciaCard extends HTMLElement {
             </div>
         `;
 
-        fetch("/components/wc-info.css")
+        fetch(new URL("wc-info.css", import.meta.url))
             .then(response => response.text())
             .then(css => {
                 const style = document.createElement("style");
