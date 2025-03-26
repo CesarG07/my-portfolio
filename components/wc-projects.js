@@ -37,7 +37,7 @@ class ProyectoCard extends HTMLElement {
             </article>
         `;
 
-        fetch("/components/wc-projects.css")
+        fetch(new URL("wc-projects.css", import.meta.url))
         .then(response => response.text())
         .then(css => {
             const style = document.createElement("style");
