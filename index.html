@@ -74,6 +74,16 @@
                 <header id="experience">Experiencias</header>
                 <div class="exp">
                     <experiencia-card
+                        logo="imgs/cide-PUCP.webp"
+                        empresa="CIDE PUCP"
+                        ciudad="San Miguel, Lima"
+                        cargo="Practicante de Sistemas"
+                        fecha="Abr. 2025 - Oct. 2025"
+                        descripcion="<strong>Funciones:</strong> Programación y mantenimiento de software para automatizaciones, scraping, integraciones con LLMs, sistemas RAG, entre otros."
+                        proyectos="<strong>Proyectos destacados:</strong> RPA con scraping para navegación web. Chatbot IA con RAG y con estilo WhatsApp Web"
+                        tecnologias="<strong>Skills:</strong> JavaScript, NodeJS, ExpressJS, APIs, PM2, Python, Flask, Embeddings, LLMs, API de Gemini, AWS EC2"
+                    ></experiencia-card>
+                    <experiencia-card
                         logo="imgs/logo-indusoft.svg"
                         empresa="Indusoft Solutions SAC"
                         ciudad="San Miguel, Lima"
@@ -145,6 +155,54 @@
                         </fieldset>
                     </div>
                 </proyecto-card>
+                <proyecto-card titulo="Sitio web informativo sobre la legislación peruana">
+                    <div slot="descripcion">
+                        <figure>
+                            <img src="imgs/libra.png" alt="Diagrama con arquitectura de software del sistema">
+                            <figcaption>Diagrama de la arquitectura del sistema</figcaption>
+                        </figure>
+                        <main>
+                            <h5>🏫 Proyecto Personal</h5>
+                            <p>
+                                Proyecto de aprendizaje que integra la API de Gemini, el LLM de Google, con un sistema RAG basado en la legislación peruana, implementado con técnicas de scraping, chunking semántico, embeddings y query rephrasing.
+                            </p>
+                            <h5>Funciones</h5>
+                            <ul>
+                                <li>Consultar con un chabot LLM entrenado con leyes peruanas.</li>
+                                <li>Búsqueda profunda en diferentes documentos sobre legislaciones</li>
+                                <li>Análisis de casos con base en normas, leyes, decretos, etc.</li>
+                            </ul>
+                        </main>
+                    </div>
+                    <div slot="capturas">
+                        <img src="imgs/Imagen1.png" alt="Interfaz de usuario del software de monitoreo">
+                        <img src="imgs/Imagen2.png" alt="Interfaz de datos registrados">
+                    </div>
+                    <div slot="tecnologias">
+                        <fieldset>
+                            <legend>Frontend</legend>
+                            <figure><span>HTML</span><img src="imgs/iconos_skills/html5.svg" alt="logo de HTML"></figure>
+                            <figure><span>CSS</span><img src="imgs/iconos_skills/css_old.svg" alt="logo de CSS"></figure>
+                            <figure><span>JavaScript</span><img src="imgs/iconos_skills/javascript.svg" alt="logo de JavaScript"></figure>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Backend</legend>
+                            <figure><span>Python</span><img src="imgs/iconos_skills/python.svg" alt="logo de Java"></figure>
+                            <figure><span>Flask</span><img src="imgs/iconos_skills/python.svg" alt="logo de Apache Tomcat"></figure>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Bases de Datos</legend>
+                            <figure><span>SQL</span><img src="imgs/iconos_skills/sql.png" alt="logo de SQL"></figure>
+                            <figure><span>SQLite</span><img src="imgs/iconos_skills/mysql.svg" alt="logo de MySQL"></figure>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Recursos</legend>
+                            <figure><span>Render</span><img src="imgs/esp32.webp" alt="imagen de placa de desarrollo ESP32"></figure>
+                            <figure><span>Git</span><img src="imgs/mpu.jpg" alt="imagen de sensor inercial MPU6050"></figure>
+                            <figure><span>Github</span><img src="imgs/mpu.jpg" alt="imagen de sensor inercial MPU6050"></figure>
+                        </fieldset>
+                    </div>
+                </proyecto-card>
                 <br>
                 <header id="education">Educación</header>
                 <div class="exp">
@@ -190,11 +248,27 @@
                         </course-card>
                         <course-card
                             title="Curso de Python"
-                            entity="Coursera 🏫"
+                            entity="Coursera | Universidad Austral 🏫"
                             logo="imgs/coursera-logo.png"
                             description="Introducción a la programación con Python y sus aplicaciones prácticas." 
                             hours="20 horas"
                             skills="Python, Algoritmos, POO">
+                        </course-card>
+                        <course-card
+                            title="Curso de Álgebra Lineal para Machine Learning"
+                            entity="Coursera | Imperial College London 🏫"
+                            logo="imgs/coursera-logo.png"
+                            description="Qué es el álgebra lineal y cómo se relaciona con los vectores y las matrices, orientado a las aplicaciones basadas en datos." 
+                            hours="18 horas"
+                            skills="Métodos de Aprendizaje Automático, Transformación de Datos, Algoritmos en Python">
+                        </course-card>
+                        <course-card
+                            title="Curso de Introducción a Sistemas Embebidos e IoT"
+                            entity="Coursera | University of California, Irvine 🏫"
+                            logo="imgs/coursera-logo.png"
+                            description="Sobre la importancia del IoT en la sociedad, los componentes actuales de los dispositivos típicos del IoT y las tendencias para el futuro. También se tratan las consideraciones de diseño de IoT, las limitaciones y la interconexión entre el mundo físico y su dispositivo." 
+                            hours="10 horas"
+                            skills="Hardware Informático, Sistemas Integrados, Conexión en Red">
                         </course-card>
                     </div>
                 </div>
