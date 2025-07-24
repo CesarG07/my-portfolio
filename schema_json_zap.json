@@ -1,0 +1,34 @@
+{
+   "dimensiones": [
+      {
+         "dimension": "nombre de dimension",
+         "valor": "valor promedio",
+         "recomendacion": "Texto con sugerencias para mejorar esta dimensión."
+      },
+      {
+         "dimension": "nombre de dimension",
+         "valor": "valor promedio",
+         "recomendacion": "Texto con sugerencias para mejorar esta dimensión."
+      },
+      {
+         "dimension": "nombre de dimension",
+         "valor": "valor promedio",
+         "recomendacion": "Texto con sugerencias para mejorar esta dimensión."
+      },
+      {
+         "dimension": "nombre de dimension",
+         "valor": "valor promedio",
+         "recomendacion": "Texto con sugerencias para mejorar esta dimensión."
+      },
+      {
+         "dimension": "nombre de dimension",
+         "valor": "valor promedio",
+         "recomendacion": "Texto con sugerencias para mejorar esta dimensión."
+      },
+      {
+         "dimension": "nombre de dimension",
+         "valor": "valor promedio",
+         "recomendacion": "Texto con sugerencias para mejorar esta dimensión."
+      },
+   ]
+}
