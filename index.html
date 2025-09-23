@@ -74,6 +74,16 @@
                 <header id="experience">Experiencias</header>
                 <div class="exp">
                     <experiencia-card
+                        logo="imgs/logo-cide2.png"
+                        empresa="CIDE PUCP"
+                        ciudad="San Miguel, Lima"
+                        cargo="Practicante de Desarrollo de Software"
+                        fecha="Abr. 2025 - Oct. 2025"
+                        descripcion="<strong>Funciones:</strong> Desarrollo y mantenimiento de código para proyectos de gran envergadura como un chatbot con IA generativa o un RPA."
+                        proyectos="<strong>Proyectos destacados:</strong> Chatbot con LLM + sistema RAG, RPA, UIs con IA generativa, automatizaciones en n8n y Zapier."
+                        tecnologias="<strong>Skills:</strong> Desarrollo web (HTML, CSS, JavaScript, NodeJS + Express, Python + Flask), web scraping, IA generativa (ChatGPT, Windsurf, Cursor, Ollama), LLM + RAG, herramientas low code (n8n, Zapier), AWS EC2, MySQL, Git, etc."
+                    ></experiencia-card>
+                    <experiencia-card
                         logo="imgs/logo-indusoft.svg"
                         empresa="Indusoft Solutions SAC"
                         ciudad="San Miguel, Lima"
@@ -96,6 +106,58 @@
                 </div>
                 <br>
                 <header id="projects">Proyectos</header>
+                <proyecto-card titulo="Sistema RAG para Chatbot de Emprendimiento">
+                    <div slot="descripcion">
+                        <figure>
+                            <img src="imgs/proyecto-rag2.png" alt="Diagrama con arquitectura de software del sistema">
+                            <figcaption>Diagrama de la arquitectura del sistema</figcaption>
+                        </figure>
+                        <main>
+                            <h5>🏫 CIDE PUCP</h5>
+                            <p>
+                                Desarrollé un chatbot de emprendimiento con un LLM + sistema RAG. Hice uso de técnicas relacionadas con IA generativa como web scraping, chunking semántico, embedding de datos, llamadas a API de OpenAI, entre otras.
+                            </p>
+                            <h5>Componentes</h5>
+                            <ul>
+                                <li>Interfaz de usuario inspirada en WhatsApp Web</li>
+                                <li>Servidor web con Node.js y Express.js</li>
+                                <li>Servidor RAG con Python y Flask</li>
+                            </ul>
+                        </main>
+                    </div>
+                    <div slot="capturas">
+                        <img src="imgs/prj2a.png" alt="Interfaz principal">
+                        <img src="imgs/prj2b.png" alt="Chatbot estilo WhatsApp Web">
+                    </div>
+                    <div slot="tecnologias">
+                        <fieldset>
+                            <legend>Frontend</legend>
+                            <figure><span>HTML</span><img src="imgs/iconos_skills/html5.svg" alt="logo de HTML"></figure>
+                            <figure><span>CSS</span><img src="imgs/iconos_skills/css_old.svg" alt="logo de CSS"></figure>
+                            <figure><span>JavaScript</span><img src="imgs/iconos_skills/javascript.svg" alt="logo de JavaScript"></figure>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Backend</legend>
+                            <figure><span>Nodejs</span><img src="imgs/iconos_skills/nodejs.svg" alt="logo de Nodejs"></figure>
+                            <figure><span>Expressjs</span><img src="imgs/iconos_skills/expressjs.svg" alt="logo de expressjs"></figure>
+                            <figure><span>Python</span><img src="imgs/iconos_skills/python.svg" alt="logo de Python"></figure>
+                            <figure><span>Flask</span><img src="imgs/iconos_skills/flask.png" alt="logo de Flask"></figure>
+                        </fieldset>
+                        <fieldset>
+                            <legend>IA Generativa</legend>
+                            <figure><span>API de OpenAI</span><img src="imgs/iconos_skills/openai.png" alt="logo de ChatGPT"></figure>
+                            <figure><span>API de Gemini</span><img src="imgs/iconos_skills/gemini.png" alt="logo de Gemini"></figure>
+                            <figure><span>Windsurf</span><img src="imgs/iconos_skills/ws.png" alt="logo de Windsurf"></figure>
+                            <figure><span>Cursor</span><img src="imgs/iconos_skills/cursor.png" alt="logo de Cursor"></figure>
+                            <figure><span>Ollama</span><img src="imgs/iconos_skills/ollama.png" alt="logo de Ollama"></figure>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Herramientas Adicionales</legend>
+                            <figure><span>AWS EC2</span><img src="imgs/iconos_skills/aws-ec2b.png" alt="logo de AWS-EC2"></figure>
+                            <figure><span>Web Scraping</span><img src="imgs/iconos_skills/playwright.png" alt="logo de Playwright"></figure>
+                        </fieldset>
+                    </div>
+                </proyecto-card>
                 <proyecto-card titulo="Sistema de Monitoreo de Temblores de Parkinson">
                     <div slot="descripcion">
                         <figure>
@@ -112,6 +174,11 @@
                                 <li>Erick Toque</li>
                                 <li>Rosa Silva</li>
                                 <li>Sebastián Vila</li>
+                            </ul>
+                            <h5>Publicaciones</h5>
+                            <ul>
+                                <li><a href="https://ieeexplore.ieee.org/document/10755804" target="_blank">Paper 1</a></li>
+                                <li><a href="https://link.springer.com/chapter/10.1007/978-3-031-89510-4_5" target="_blank">Paper 2</a></li>
                             </ul>
                         </main>
                     </div>
@@ -189,12 +256,20 @@
                             skills="HTML, CSS, Responsive Design">
                         </course-card>
                         <course-card
-                            title="Curso de Python"
-                            entity="Coursera 🏫"
+                            title="Programación Orientada a Objetos con Python"
+                            entity="Coursera 🏫 Universidad Austral"
                             logo="imgs/coursera-logo.png"
-                            description="Introducción a la programación con Python y sus aplicaciones prácticas." 
-                            hours="20 horas"
+                            description="Diseño de programas con objetos como para diagramar UML; lo que te permitirá diseñar y construir sistemas con objetos, modelando cualquier aspecto de la realidad que desees. Además podrá hacer sistemas de calidad realizando pruebas automáticas del sistema y reestructuraciones del mismo." 
+                            hours="8 horas"
                             skills="Python, Algoritmos, POO">
+                        </course-card>
+                        <course-card
+                            title="Estructura de Datos en Python"
+                            entity="Coursera 🏫 Universidad Austral"
+                            logo="imgs/coursera-logo.png"
+                            description="Este curso te permitirá realizar programas que trabajen con muchos datos tomados desde archivos de la computadora. Aquí podrás conocer cómo utilizar las estructuras de datos integradas en Python, como las listas, los diccionarios y las tuplas. Además entenderás cómo trabajar con archivos y el manejo de excepciones. " 
+                            hours="14 horas"
+                            skills="Scripting, manejo de archivos, excepciones, listas, diccionarios, tuplas">
                         </course-card>
                     </div>
                 </div>
