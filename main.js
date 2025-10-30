@@ -3,7 +3,7 @@ console.log("Aleluya");
 document.addEventListener("DOMContentLoaded", () => {
   const botonPDF = document.getElementById("pdf");
   botonPDF.addEventListener("click", () => {
-      const urlPDF = "tools/CV_CesarGutierrez_es.pdf";
+      const urlPDF = "tools/CV_CesarGutierrez_esp.pdf";
       window.open(urlPDF, "_blank");
   });
 });

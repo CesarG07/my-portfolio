@@ -38,6 +38,7 @@
         <script type="module" src="components/wc-courses.js"></script>
         <script type="module" src="components/wc-info.js"></script>
         <script type="module" src="components/wc-projects.js"></script>
+        <script type="module" src="components/wc-crono.js"></script>
     </head>
     <body>
         <header class="header">
@@ -271,14 +272,34 @@
                             hours="14 horas"
                             skills="Scripting, manejo de archivos, excepciones, listas, diccionarios, tuplas">
                         </course-card>
+                        <course-card
+                            title="Mathematics for Machine Learning: Linear Algebra"
+                            entity="Coursera 🏫 Imperial College London"
+                            logo="imgs/coursera-logo.png"
+                            description="Curso de matemáticas para machine learning, enfocado en álgebra lineal." 
+                            hours="18 horas"
+                            skills="Linear Algebra, Algoritmos, Ciencias de Datos, Python">
+                        </course-card>
+                        <course-card
+                            title="Introduction to the Internet of Things and Embedded Systems"
+                            entity="Coursera 🏫 Caroline Irvine University"
+                            logo="imgs/coursera-logo.png"
+                            description="Introducción al Internet de las cosas y los sistemas embebidos." 
+                            hours="10 horas"
+                            skills="Internet of Things, sistemas integrados, hardware informático">
+                        </course-card>
                     </div>
                 </div>
             </section>
             <section class="section__two">
-                <header id="contact">
-                    <h3>+ Sobre mí</h3>
-                    <p style="opacity: 0.6;">En construcción...</p>
-                </header>
+                <header id="contact"><h3>Contacto</h3></header>
+                
+                <crono-element
+                    title="Momentos Destacados"
+                    legend="Vida Académica">
+                </crono-element>
+                <h3>+ Sobre mí</h3>
+                <p style="opacity: 0.6;">En construcción...</p>
                 <img src="imgs/gato2.gif" alt="meme sobre trabajar en laptop" style="width: 70px; height: auto;">
             </section>
         </article>
