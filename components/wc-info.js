@@ -12,6 +12,7 @@ class ExperienciaCard extends HTMLElement {
         const descripcion = this.getAttribute("descripcion");
         const proyectos = this.getAttribute("proyectos");
         const tecnologias = this.getAttribute("tecnologias");
+        const certificate = this.getAttribute("certificate");
 
         shadow.innerHTML = `
             <div class="logo-container">
@@ -22,6 +23,7 @@ class ExperienciaCard extends HTMLElement {
                 <p>💼 ${cargo}</p>
                 <p>🌍 ${ciudad}</p>
                 <p>📆 ${fecha}</p>
+                ${certificate && certificate !== "none" ? `<a href="${certificate}" target="_blank" class="certificate-link" title="Ver Certificado">📜</a>` : ""}
             </div>
             <div class="barra-lateral">	&#xBB</div>
             <div class="info-adicional hidden">

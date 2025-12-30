@@ -7,7 +7,7 @@
     border-bottom: 1px solid #ccc;
 }
 
-.section h3{
+.section h3 {
     color: navy;
 }
 
@@ -79,4 +79,17 @@
 .info-detail span {
     font-size: 1.2rem;
     color: #097;
+}
+
+.certificate-link {
+    color: #097;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.certificate-link:hover {
+    color: navy;
+    border-bottom-color: navy;
 }

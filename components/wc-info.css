@@ -1,7 +1,8 @@
 :host {
-    width: 55vh;
-    height: 200px;
-    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    height: 240px;
+    max-width: 650px;
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -11,6 +12,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     position: relative;
+    user-select: none;
 }
 
 .logo-container {
@@ -58,6 +60,20 @@
     opacity: 0.8;
 }
 
+.certificate-link {
+    position: absolute;
+    bottom: 15px;
+    right: 35px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    z-index: 2;
+}
+
+.certificate-link:hover {
+    transform: scale(1.2);
+}
+
 .barra-lateral {
     position: absolute;
     top: 0;
@@ -78,7 +94,7 @@
     width: 20px;
 }
 
-.barra-lateral.hidden{
+.barra-lateral.hidden {
     right: 65%;
     transition: right 0.3s ease-in-out;
     transform: rotate(180deg);
@@ -100,7 +116,7 @@
     font-size: 0.7rem;
 }
 
-.info-adicional p{
+.info-adicional p {
     line-height: 100%;
 }
 
@@ -113,19 +129,19 @@
 }
 
 @media (max-width: 500px) {
-    :host{
+    :host {
         height: 170px;
     }
 
-    .card-content h3{
+    .card-content h3 {
         font-size: 4.2vw;
     }
 
-    .card-content p{
+    .card-content p {
         font-size: 3.2vw;
     }
 
-    .info-adicional{
+    .info-adicional {
         font-size: 2vw;
         padding: 0 15px;
     }

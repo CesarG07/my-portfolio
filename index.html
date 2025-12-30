@@ -1,324 +1,326 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>CGF - Portafolio de César Gutiérrez</title>
-        <meta name="viewport" content="width=device-width">
-        <meta name="description" content="Portafolio de César Gutiérrez Flores, egresado de Ingeniería Electrónica">
-        <meta name="keywords" content="César Gutiérrez, Portafolio, Ingeniería Electrónica, Desarrollo de Software, Internet of Things">
-        <meta name="author" content="César Gutiérrez Flores">
-        <meta name="robots" content="index, follow">
-        <meta name="theme-color" content="#09f">
-        <meta charset="UTF-8">
-        <meta lang="es">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <meta property="og:title" content="CGF - Portafolio de César Gutiérrez">
-        <meta property="og:description" content="Portafolio de César Gutiérrez Flores, egresado de Ingeniería Electrónica">
-        <meta property="og:image" content="imgs/logo.png">
-        <meta property="og:url" content="https://cesargf.dev">
-        <meta property="og:type" content="website">
-        <meta property="og:site_name" content="CGF - Portafolio de César Gutiérrez">
-        <meta property="og:locale" content="es_PE">
-        <meta property="og:locale:alternate" content="en_US">
+<head>
+    <title>CGF - Portafolio de César Gutiérrez</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Portafolio de César Gutiérrez Flores, egresado de Ingeniería Electrónica">
+    <meta name="keywords"
+        content="César Gutiérrez, Portafolio, Ingeniería Electrónica, Desarrollo de Software, Internet of Things">
+    <meta name="author" content="César Gutiérrez Flores">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#09f">
+    <meta charset="UTF-8">
+    <meta lang="es">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <link rel="alternate" hreflang="en_US" href="https://cesargf.dev/en">
-        <link rel="canonical" href="https://cesargf.dev">
+    <meta property="og:title" content="CGF - Portafolio de César Gutiérrez">
+    <meta property="og:description" content="Portafolio de César Gutiérrez Flores, egresado de Ingeniería Electrónica">
+    <meta property="og:image" content="imgs/logo.webp">
+    <meta property="og:url" content="https://cesargf.dev">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CGF - Portafolio de César Gutiérrez">
+    <meta property="og:locale" content="es_PE">
+    <meta property="og:locale:alternate" content="en_US">
 
-        <link rel="icon" href="imgs/logo.png" type="imgs/png">
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <link rel="stylesheet" href="style_header.css" type="text/css">
-        <link rel="stylesheet" href="style_article.css" type="text/css">
-        <link rel="stylesheet" href="style_responsive.css" type="text/css">
-        <link rel="stylesheet" href="style_footer.css" type="text/css">
-        <link rel="stylesheet" href="style_tarjeta.css" type="text/css">
-        <link rel="stylesheet" href="style_tarjeta2.css" type="text/css">
-        <link rel="preconnect" href="https://fonts.googleapis.com" aria-disabled="true">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin aria-disabled="true">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-        <script type="module" src="components/wc-courses.js"></script>
-        <script type="module" src="components/wc-info.js"></script>
-        <script type="module" src="components/wc-projects.js"></script>
-        <script type="module" src="components/wc-crono.js"></script>
-    </head>
-    <body>
-        <header class="header">
-            <div class="header__div">
-                <picture class="header__logo">
-                    <a href="index.html"><img src="imgs/logo.png" alt="Logo CGF" title="Logo CGF"></a>
-                </picture>
-                <div class="menu-toggle" id="menu-toggle">☰</div>
-                <nav class="header__nav" id="header-nav">
-                    <ul>
-                        <li><a href="#experience">Experiencias</a></li>
-                        <li><a href="#projects">Proyectos</a></li>
-                        <li><a href="#education">Educación</a></li>
-                        <li><a href="#contact">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <article>
-            <main class="article__main">
-                <div class="main__text">
-                    <h1>César Gutiérrez Flores</h1>
-                    <p>Bachiller en <strong>Ingeniería Electrónica</strong> apasionado por la tecnología y la innovación.</p>
-                    <p>Tengo experiencia en desarrollo de software, sistemas embebidos e Internet of Things (IoT).</p>
-                    <p>Busco una oportunidad para aplicar mis conocimientos y habilidades en proyectos desafiantes aportando a su equipo.</p>
-                    <br>
-                    <button id="pdf">Ver CV 🔍</button>
-                </div>
-                <div class="main__img">
-                    <img src="imgs/foto.jpeg" alt="César Gutiérrez Flores">
-                </div>
-            </main>
-            <section class="section__one">
-                <header id="experience">Experiencias</header>
-                <div class="exp">
-                    <experiencia-card
-                        logo="imgs/logo-cide2.png"
-                        empresa="CIDE PUCP"
-                        ciudad="San Miguel, Lima"
-                        cargo="Practicante de Desarrollo de Software"
-                        fecha="Abr. 2025 - Oct. 2025"
-                        descripcion="<strong>Funciones:</strong> Desarrollo y mantenimiento de código para proyectos de gran envergadura como un chatbot con IA generativa o un RPA."
-                        proyectos="<strong>Proyectos destacados:</strong> Chatbot con LLM + sistema RAG, RPA, UIs con IA generativa, automatizaciones en n8n y Zapier."
-                        tecnologias="<strong>Skills:</strong> Desarrollo web (HTML, CSS, JavaScript, NodeJS + Express, Python + Flask), web scraping, IA generativa (ChatGPT, Windsurf, Cursor, Ollama), LLM + RAG, herramientas low code (n8n, Zapier), AWS EC2, MySQL, Git, etc."
-                    ></experiencia-card>
-                    <experiencia-card
-                        logo="imgs/logo-indusoft.svg"
-                        empresa="Indusoft Solutions SAC"
-                        ciudad="San Miguel, Lima"
-                        cargo="Practicante de Proyectos"
-                        fecha="Sep. 2024 - Ene. 2025"
-                        descripcion="<strong>Funciones:</strong> Configuración y seguimiento de equipos de sistemas SCADA y redes industriales. Elaboración de informes técnicos detallados y diagramas de conexiones y comunicaciones."
-                        proyectos="<strong>Proyectos destacados:</strong> Ciberseguridad para una red industrial, Circuito eléctrico para banco de baterías."
-                        tecnologias="<strong>Skills:</strong> Labview, AnyDesk, Escritorio Remoto, PLC Siemens 1200."
-                    ></experiencia-card>
-                    <experiencia-card
-                        logo="imgs/logo-bethel.jpg"
-                        empresa="Asociación Cultural Bethel"
-                        ciudad="Cercado de Lima, Lima"
-                        cargo="Practicante del Área Técnica"
-                        fecha="Mar. 2024 - May. 2024"
-                        descripcion="<strong>Funciones:</strong> Colaboré en la implementación de toda la infraestructura tecnológica en nuevas instalaciones. Operaciones técnicas de instalación, cableado, supervisión y revisión de diferentes equipos electrónicos."
-                        proyectos="<strong>Proyectos destacados:</strong> implementación de nuevos equipos en un datacenter desde cero."
-                        tecnologias="<strong>Skills:</strong> AnyDesk, Hardware, O&M."
-                    ></experiencia-card>
-                </div>
+    <link rel="alternate" hreflang="en_US" href="https://cesargf.dev/en">
+    <link rel="canonical" href="https://cesargf.dev">
+
+    <link rel="icon" href="imgs/logo.webp" type="imgs/webp">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style_header.css" type="text/css">
+    <link rel="stylesheet" href="style_article.css" type="text/css">
+    <link rel="stylesheet" href="style_responsive.css" type="text/css">
+    <link rel="stylesheet" href="style_footer.css" type="text/css">
+    <link rel="stylesheet" href="style_tarjeta.css" type="text/css">
+    <link rel="stylesheet" href="style_tarjeta2.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" aria-disabled="true">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin aria-disabled="true">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script type="module" src="components/wc-courses.js"></script>
+    <script type="module" src="components/wc-info.js"></script>
+    <script type="module" src="components/wc-projects.js"></script>
+    <script type="module" src="components/wc-crono.js"></script>
+    <script type="module" src="components/wc-slider.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__div">
+            <picture class="header__logo">
+                <a href="index.html"><img src="imgs/logo.webp" alt="Logo CGF" title="Logo CGF"></a>
+            </picture>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+            <nav class="header__nav" id="header-nav">
+                <ul>
+                    <li><a href="#experience">Experiencias</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#education">Educación</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <article>
+        <main class="article__main">
+            <div class="main__text">
+                <h1>César Gutiérrez Flores</h1>
+                <p>Bachiller en <strong>Ingeniería Electrónica</strong> apasionado por la tecnología y la innovación.
+                </p>
+                <p>Tengo experiencia en desarrollo de software, sistemas embebidos e Internet of Things (IoT).</p>
+                <p>Busco una oportunidad para aplicar mis conocimientos y habilidades en proyectos desafiantes aportando
+                    a su equipo.</p>
                 <br>
-                <header id="projects">Proyectos</header>
-                <proyecto-card titulo="Sistema RAG para Chatbot de Emprendimiento">
-                    <div slot="descripcion">
-                        <figure>
-                            <img src="imgs/proyecto-rag2.png" alt="Diagrama con arquitectura de software del sistema">
-                            <figcaption>Diagrama de la arquitectura del sistema</figcaption>
-                        </figure>
-                        <main>
-                            <h5>🏫 CIDE PUCP</h5>
-                            <p>
-                                Desarrollé un chatbot de emprendimiento con un LLM + sistema RAG. Hice uso de técnicas relacionadas con IA generativa como web scraping, chunking semántico, embedding de datos, llamadas a API de OpenAI, entre otras.
-                            </p>
-                            <h5>Componentes</h5>
-                            <ul>
-                                <li>Interfaz de usuario inspirada en WhatsApp Web</li>
-                                <li>Servidor web con Node.js y Express.js</li>
-                                <li>Servidor RAG con Python y Flask</li>
-                            </ul>
-                        </main>
-                    </div>
-                    <div slot="capturas">
-                        <img src="imgs/prj2a.png" alt="Interfaz principal">
-                        <img src="imgs/prj2b.png" alt="Chatbot estilo WhatsApp Web">
-                    </div>
-                    <div slot="tecnologias">
-                        <fieldset>
-                            <legend>Frontend</legend>
-                            <figure><span>HTML</span><img src="imgs/iconos_skills/html5.svg" alt="logo de HTML"></figure>
-                            <figure><span>CSS</span><img src="imgs/iconos_skills/css_old.svg" alt="logo de CSS"></figure>
-                            <figure><span>JavaScript</span><img src="imgs/iconos_skills/javascript.svg" alt="logo de JavaScript"></figure>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Backend</legend>
-                            <figure><span>Nodejs</span><img src="imgs/iconos_skills/nodejs.svg" alt="logo de Nodejs"></figure>
-                            <figure><span>Expressjs</span><img src="imgs/iconos_skills/expressjs.svg" alt="logo de expressjs"></figure>
-                            <figure><span>Python</span><img src="imgs/iconos_skills/python.svg" alt="logo de Python"></figure>
-                            <figure><span>Flask</span><img src="imgs/iconos_skills/flask.png" alt="logo de Flask"></figure>
-                        </fieldset>
-                        <fieldset>
-                            <legend>IA Generativa</legend>
-                            <figure><span>API de OpenAI</span><img src="imgs/iconos_skills/openai.png" alt="logo de ChatGPT"></figure>
-                            <figure><span>API de Gemini</span><img src="imgs/iconos_skills/gemini.png" alt="logo de Gemini"></figure>
-                            <figure><span>Windsurf</span><img src="imgs/iconos_skills/ws.png" alt="logo de Windsurf"></figure>
-                            <figure><span>Cursor</span><img src="imgs/iconos_skills/cursor.png" alt="logo de Cursor"></figure>
-                            <figure><span>Ollama</span><img src="imgs/iconos_skills/ollama.png" alt="logo de Ollama"></figure>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Herramientas Adicionales</legend>
-                            <figure><span>AWS EC2</span><img src="imgs/iconos_skills/aws-ec2b.png" alt="logo de AWS-EC2"></figure>
-                            <figure><span>Web Scraping</span><img src="imgs/iconos_skills/playwright.png" alt="logo de Playwright"></figure>
-                        </fieldset>
-                    </div>
-                </proyecto-card>
-                <proyecto-card titulo="Sistema de Monitoreo de Temblores de Parkinson">
-                    <div slot="descripcion">
-                        <figure>
-                            <img src="imgs/libra.png" alt="Diagrama con arquitectura de software del sistema">
-                            <figcaption>Diagrama de la arquitectura del sistema</figcaption>
-                        </figure>
-                        <main>
-                            <h5>🏫 Laboratorio LIBRA PUCP</h5>
-                            <p>
-                                Estuve encargado del desarrollo del software de monitoreo de temblores de manos en pacientes de Parkinson utilizando sensores y microcontroladores.
-                            </p>
-                            <h5>Equipo</h5>
-                            <ul>
-                                <li>Erick Toque</li>
-                                <li>Rosa Silva</li>
-                                <li>Sebastián Vila</li>
-                            </ul>
-                            <h5>Publicaciones</h5>
-                            <ul>
-                                <li><a href="https://ieeexplore.ieee.org/document/10755804" target="_blank">Paper 1</a></li>
-                                <li><a href="https://link.springer.com/chapter/10.1007/978-3-031-89510-4_5" target="_blank">Paper 2</a></li>
-                            </ul>
-                        </main>
-                    </div>
-                    <div slot="capturas">
-                        <img src="imgs/Imagen1.png" alt="Interfaz de usuario del software de monitoreo">
-                        <img src="imgs/Imagen2.png" alt="Interfaz de datos registrados">
-                    </div>
-                    <div slot="tecnologias">
-                        <fieldset>
-                            <legend>Frontend</legend>
-                            <figure><span>HTML</span><img src="imgs/iconos_skills/html5.svg" alt="logo de HTML"></figure>
-                            <figure><span>CSS</span><img src="imgs/iconos_skills/css_old.svg" alt="logo de CSS"></figure>
-                            <figure><span>JavaScript</span><img src="imgs/iconos_skills/javascript.svg" alt="logo de JavaScript"></figure>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Backend</legend>
-                            <figure><span>Java</span><img src="imgs/iconos_skills/java.svg" alt="logo de Java"></figure>
-                            <figure><span>Tomcat</span><img src="imgs/iconos_skills/tomcat.png" alt="logo de Apache Tomcat"></figure>
-                            <figure><span>Nodejs</span><img src="imgs/iconos_skills/nodejs.svg" alt="logo de Nodejs"></figure>
-                            <figure><span>Expressjs</span><img src="imgs/iconos_skills/expressjs.svg" alt="logo de expressjs"></figure>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Bases de Datos</legend>
-                            <figure><span>SQL</span><img src="imgs/iconos_skills/sql.png" alt="logo de SQL"></figure>
-                            <figure><span>MySQL</span><img src="imgs/iconos_skills/mysql.svg" alt="logo de MySQL"></figure>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Hardware</legend>
-                            <figure><span>ESP32</span><img src="imgs/esp32.webp" alt="imagen de placa de desarrollo ESP32"></figure>
-                            <figure><span>MPU6050</span><img src="imgs/mpu.jpg" alt="imagen de sensor inercial MPU6050"></figure>
-                        </fieldset>
-                    </div>
-                </proyecto-card>
-                <br>
-                <header id="education">Educación</header>
-                <div class="exp">
-                    <experiencia-card
-                        logo="imgs/logo-pucp.png"
-                        empresa="Pontificia Universidad Católica del Perú"
-                        ciudad="San Miguel, Lima"
-                        cargo="Ingeniería Electrónica"
-                        fecha="Ago. 2019 - Dic. 2024"
-                        descripcion="Beneficiario del programa beca 18, en proceso de bachillerato."
-                        proyectos="<strong>Proyectos destacados:</strong> Sistema de control de velocidad de motores DC de 2kW, Arquitectura cloud para detector de fallas en fajas industriales."
-                        tecnologias="<strong>Conocimientos adquiridos:</strong> Desarrollo de Software, IoT, Manejo de Hardware, Circuitos y Sistemas Electrónicos, Bioingeniería, Sistemas Eléctricos."
-                    ></experiencia-card>
-                    <experiencia-card
-                        logo="imgs/osinergmin_logo.jpg"
-                        empresa="PEU 2025 de Osinergmin"
-                        ciudad="Lima"
-                        cargo="Regulación de la Electricidad"
-                        fecha="Ene. 2025 - Mar. 2025"
-                        descripcion="Fui seleccionado de entre un gran número de estudiantes de todo el Perú mediante un examen de conocimientos."
-                        proyectos="<strong>Proyecto destacado:</strong> Sistema de trazabilidad para balones de gas en base a tecnología RFID"
-                        tecnologias="<strong>Conocimientos adquiridos:</strong> Sistemas Eléctricos, Mercado Eléctrico Peruano, Normativas."
-                    ></experiencia-card>
-                </div>
-                <div class="mas-cursos">
-                    <h4>Formación Complementaria</h4>
-                    <div class="tarjeta3">
-                        <course-card 
-                            title="Idioma Inglés" 
-                            entity="Idiomas PUCP 🏫" 
-                            logo="imgs/logo-idiomas.jpg"
-                            description="Clases virtuales en plataforma Cambridge LMS." 
-                            hours="Ago. 2020 - Nov. 2024" 
-                            skills="Inglés nivel intermedio (writing: B2, speaking: B1)">
-                        </course-card>
-                        <course-card
-                            title="Curso de HTML y CSS"
-                            entity="Google 🏫"
-                            logo="imgs/google.png"
-                            description="Curso intensivo acerca de los fundamentos del desarrollo web con HTML y CSS." 
-                            hours="40 horas"
-                            skills="HTML, CSS, Responsive Design">
-                        </course-card>
-                        <course-card
-                            title="Programación Orientada a Objetos con Python"
-                            entity="Coursera 🏫 Universidad Austral"
-                            logo="imgs/coursera-logo.png"
-                            description="Diseño de programas con objetos como para diagramar UML; lo que te permitirá diseñar y construir sistemas con objetos, modelando cualquier aspecto de la realidad que desees. Además podrá hacer sistemas de calidad realizando pruebas automáticas del sistema y reestructuraciones del mismo." 
-                            hours="8 horas"
-                            skills="Python, Algoritmos, POO">
-                        </course-card>
-                        <course-card
-                            title="Estructura de Datos en Python"
-                            entity="Coursera 🏫 Universidad Austral"
-                            logo="imgs/coursera-logo.png"
-                            description="Este curso te permitirá realizar programas que trabajen con muchos datos tomados desde archivos de la computadora. Aquí podrás conocer cómo utilizar las estructuras de datos integradas en Python, como las listas, los diccionarios y las tuplas. Además entenderás cómo trabajar con archivos y el manejo de excepciones. " 
-                            hours="14 horas"
-                            skills="Scripting, manejo de archivos, excepciones, listas, diccionarios, tuplas">
-                        </course-card>
-                        <course-card
-                            title="Mathematics for Machine Learning: Linear Algebra"
-                            entity="Coursera 🏫 Imperial College London"
-                            logo="imgs/coursera-logo.png"
-                            description="Curso de matemáticas para machine learning, enfocado en álgebra lineal." 
-                            hours="18 horas"
-                            skills="Linear Algebra, Algoritmos, Ciencias de Datos, Python">
-                        </course-card>
-                        <course-card
-                            title="Introduction to the Internet of Things and Embedded Systems"
-                            entity="Coursera 🏫 Caroline Irvine University"
-                            logo="imgs/coursera-logo.png"
-                            description="Introducción al Internet de las cosas y los sistemas embebidos." 
-                            hours="10 horas"
-                            skills="Internet of Things, sistemas integrados, hardware informático">
-                        </course-card>
-                    </div>
-                </div>
-            </section>
-            <section class="section__two">
-                <header id="contact"><h3>Contacto</h3></header>
-                
-                <crono-element
-                    title="Momentos Destacados"
-                    legend="Vida Académica">
-                </crono-element>
-                <h3>+ Sobre mí</h3>
-                <p style="opacity: 0.6;">En construcción...</p>
-                <img src="imgs/gato2.gif" alt="meme sobre trabajar en laptop" style="width: 70px; height: auto;">
-            </section>
-        </article>
-        <footer>
-            <div class="footer">
-                <div class="footer__socials">
-                    <a href="https://www.linkedin.com/in/c%C3%A9sar-gustavo-guti%C3%A9rrez-flores-1b54681a9/"><img src="imgs/linkedin.png" alt="Ícono de Linkedin"></a>
-                    <a href="https://github.com/CesarG07"><img src="imgs/github.png" alt="Ícono de Github"></a>
-                    <a href=""><img src="imgs/twitterx.png" alt="Ícono de Twitter" title="Aún no disponible"></a>
-                </div>
-                <p id="copy">&copy; 2025 César Gutiérrez Flores. Algunos derechos reservados.</p>
-                <blockquote cite="https://www.biblegateway.com/passage/?search=Salmos%2037&version=RVR1960">
-                    <p>"Pon tu vida en las manos del Señor; confía en él, y él vendrá en tu ayuda."</p>
-                    <div>
-                        <cite class="author">Salmos 37:5</cite>
-                    </div>
-                </blockquote>
+                <button id="pdf">Ver CV 🔍</button>
             </div>
-        </footer>
-        <script src="main.js"></script>
-    </body>
+            <div class="main__img">
+                <img src="imgs/foto.jpeg" alt="César Gutiérrez Flores">
+            </div>
+        </main>
+        <section class="section__one">
+            <header id="experience">Experiencias</header>
+            <wc-slider class="exp">
+                <experiencia-card logo="imgs/logo-cide2.webp" empresa="CIDE PUCP" ciudad="San Miguel, Lima"
+                    cargo="Practicante de Desarrollo de Software" fecha="Abr. 2025 - Oct. 2025"
+                    descripcion="<strong>Funciones:</strong> Desarrollo y mantenimiento de código para proyectos de gran envergadura como un chatbot con IA generativa o un RPA."
+                    proyectos="<strong>Proyectos destacados:</strong> Chatbot con LLM + sistema RAG, RPA, UIs con IA generativa, automatizaciones en n8n y Zapier."
+                    tecnologias="<strong>Skills:</strong> Desarrollo web (HTML, CSS, JavaScript, NodeJS + Express, Python + Flask), web scraping, IA generativa (ChatGPT, Windsurf, Cursor, Ollama), LLM + RAG, herramientas low code (n8n, Zapier), AWS EC2, MySQL, Git, etc."
+                    certificate="none"></experiencia-card>
+                <experiencia-card logo="imgs/logo-indusoft.svg" empresa="Indusoft Solutions SAC"
+                    ciudad="San Miguel, Lima" cargo="Practicante de Proyectos" fecha="Sep. 2024 - Ene. 2025"
+                    descripcion="<strong>Funciones:</strong> Configuración y seguimiento de equipos de sistemas SCADA y redes industriales. Elaboración de informes técnicos detallados y diagramas de conexiones y comunicaciones."
+                    proyectos="<strong>Proyectos destacados:</strong> Ciberseguridad para una red industrial, Circuito eléctrico para banco de baterías."
+                    tecnologias="<strong>Skills:</strong> Labview, AnyDesk, Escritorio Remoto, PLC Siemens 1200."
+                    certificate="none"></experiencia-card>
+                <experiencia-card logo="imgs/logo-bethel.jpg" empresa="Asociación Cultural Bethel"
+                    ciudad="Cercado de Lima, Lima" cargo="Practicante del Área Técnica" fecha="Mar. 2024 - May. 2024"
+                    descripcion="<strong>Funciones:</strong> Colaboré en la implementación de toda la infraestructura tecnológica en nuevas instalaciones. Operaciones técnicas de instalación, cableado, supervisión y revisión de diferentes equipos electrónicos."
+                    proyectos="<strong>Proyectos destacados:</strong> implementación de nuevos equipos en un datacenter desde cero."
+                    tecnologias="<strong>Skills:</strong> AnyDesk, Hardware, O&M."
+                    certificate="none"></experiencia-card>
+            </wc-slider>
+            <br>
+            <header id="projects">Proyectos</header>
+            <proyecto-card titulo="Chatbot de Emprendimiento con IA generativa (Sistema RAG)">
+                <div slot="descripcion">
+                    <figure>
+                        <img src="imgs/proyecto-rag2.png" alt="Diagrama con arquitectura de software del sistema">
+                        <figcaption>Diagrama de la arquitectura del sistema</figcaption>
+                    </figure>
+                    <main>
+                        <h5>🏫 CIDE PUCP</h5>
+                        <p>
+                            Desarrollé un chatbot de emprendimiento con un LLM + sistema RAG. Hice uso de técnicas
+                            relacionadas con IA generativa como web scraping, chunking semántico, embedding de datos,
+                            llamadas a API de OpenAI, entre otras.
+                        </p>
+                        <a href="https://educatemas.net/">Enlace</a>
+                        <h5>Componentes</h5>
+                        <ul>
+                            <li>Interfaz de usuario inspirada en WhatsApp Web</li>
+                            <li>Servidor web con Node.js y Express.js</li>
+                            <li>Servidor RAG con Python y Flask</li>
+                        </ul>
+                    </main>
+                </div>
+                <div slot="capturas">
+                    <img src="imgs/prj2a.png" alt="Interfaz principal">
+                    <img src="imgs/prj2b.png" alt="Chatbot estilo WhatsApp Web">
+                </div>
+                <div slot="tecnologias">
+                    <fieldset>
+                        <legend>Frontend</legend>
+                        <figure><span>HTML</span><img src="imgs/iconos_skills/html5.svg" alt="logo de HTML"></figure>
+                        <figure><span>CSS</span><img src="imgs/iconos_skills/css_old.svg" alt="logo de CSS"></figure>
+                        <figure><span>JavaScript</span><img src="imgs/iconos_skills/javascript.svg"
+                                alt="logo de JavaScript"></figure>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Backend</legend>
+                        <figure><span>Nodejs</span><img src="imgs/iconos_skills/nodejs.svg" alt="logo de Nodejs">
+                        </figure>
+                        <figure><span>Expressjs</span><img src="imgs/iconos_skills/expressjs.svg"
+                                alt="logo de expressjs"></figure>
+                        <figure><span>Python</span><img src="imgs/iconos_skills/python.svg" alt="logo de Python">
+                        </figure>
+                        <figure><span>Flask</span><img src="imgs/iconos_skills/flask.webp" alt="logo de Flask"></figure>
+                    </fieldset>
+                    <fieldset>
+                        <legend>IA Generativa</legend>
+                        <figure><span>API de OpenAI</span><img src="imgs/iconos_skills/openai.webp"
+                                alt="logo de ChatGPT"></figure>
+                        <figure><span>API de Gemini</span><img src="imgs/iconos_skills/gemini.webp"
+                                alt="logo de Gemini">
+                        </figure>
+                        <figure><span>Windsurf</span><img src="imgs/iconos_skills/ws.webp" alt="logo de Windsurf">
+                        </figure>
+                        <figure><span>Cursor</span><img src="imgs/iconos_skills/cursor.webp" alt="logo de Cursor">
+                        </figure>
+                        <figure><span>Ollama</span><img src="imgs/iconos_skills/ollama.webp" alt="logo de Ollama">
+                        </figure>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Herramientas Adicionales</legend>
+                        <figure><span>AWS EC2</span><img src="imgs/iconos_skills/aws-ec2b.webp" alt="logo de AWS-EC2">
+                        </figure>
+                        <figure><span>Web Scraping</span><img src="imgs/iconos_skills/playwright.webp"
+                                alt="logo de Playwright"></figure>
+                    </fieldset>
+                </div>
+            </proyecto-card>
+            <proyecto-card titulo="Sistema de Monitoreo de Temblores de Parkinson">
+                <div slot="descripcion">
+                    <figure>
+                        <img src="imgs/libra.png" alt="Diagrama con arquitectura de software del sistema">
+                        <figcaption>Diagrama de la arquitectura del sistema</figcaption>
+                    </figure>
+                    <main>
+                        <h5>🏫 Laboratorio LIBRA PUCP</h5>
+                        <p>
+                            Estuve encargado del desarrollo del software de monitoreo de temblores de manos en pacientes
+                            de Parkinson utilizando sensores y microcontroladores.
+                        </p>
+                        <h5>Equipo</h5>
+                        <ul>
+                            <li>Erick Toque</li>
+                            <li>Rosa Silva</li>
+                            <li>Sebastián Vila</li>
+                        </ul>
+                        <h5>Publicaciones</h5>
+                        <ul>
+                            <li><a href="https://ieeexplore.ieee.org/document/10755804" target="_blank">Paper 1</a></li>
+                            <li><a href="https://link.springer.com/chapter/10.1007/978-3-031-89510-4_5"
+                                    target="_blank">Paper 2</a></li>
+                        </ul>
+                    </main>
+                </div>
+                <div slot="capturas">
+                    <img src="imgs/Imagen1.png" alt="Interfaz de usuario del software de monitoreo">
+                    <img src="imgs/Imagen2.png" alt="Interfaz de datos registrados">
+                </div>
+                <div slot="tecnologias">
+                    <fieldset>
+                        <legend>Frontend</legend>
+                        <figure><span>HTML</span><img src="imgs/iconos_skills/html5.svg" alt="logo de HTML"></figure>
+                        <figure><span>CSS</span><img src="imgs/iconos_skills/css_old.svg" alt="logo de CSS"></figure>
+                        <figure><span>JavaScript</span><img src="imgs/iconos_skills/javascript.svg"
+                                alt="logo de JavaScript"></figure>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Backend</legend>
+                        <figure><span>Java</span><img src="imgs/iconos_skills/java.webp" alt="logo de Java"></figure>
+                        <figure><span>Tomcat</span><img src="imgs/iconos_skills/tomcat.webp"
+                                alt="logo de Apache Tomcat">
+                        </figure>
+                        <figure><span>Nodejs</span><img src="imgs/iconos_skills/nodejs.svg" alt="logo de Nodejs">
+                        </figure>
+                        <figure><span>Expressjs</span><img src="imgs/iconos_skills/expressjs.svg"
+                                alt="logo de expressjs"></figure>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Bases de Datos</legend>
+                        <figure><span>SQL</span><img src="imgs/iconos_skills/sql.webp" alt="logo de SQL"></figure>
+                        <figure><span>MySQL</span><img src="imgs/iconos_skills/mysql.svg" alt="logo de MySQL"></figure>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Hardware</legend>
+                        <figure><span>ESP32</span><img src="imgs/esp32.webp" alt="imagen de placa de desarrollo ESP32">
+                        </figure>
+                        <figure><span>MPU6050</span><img src="imgs/mpu.webp" alt="imagen de sensor inercial MPU6050">
+                        </figure>
+                    </fieldset>
+                </div>
+            </proyecto-card>
+            <br>
+            <header id="education">Educación</header>
+            <wc-slider class="exp">
+                <experiencia-card logo="imgs/logo-pucp.webp" empresa="Pontificia Universidad Católica del Perú"
+                    ciudad="San Miguel, Lima" cargo="Ingeniería Electrónica" fecha="Ago. 2019 - Dic. 2024"
+                    descripcion="Beneficiario del programa beca 18, en proceso de bachillerato."
+                    proyectos="<strong>Proyectos destacados:</strong> Sistema de control de velocidad de motores DC de 2kW, Arquitectura cloud para detector de fallas en fajas industriales."
+                    tecnologias="<strong>Conocimientos adquiridos:</strong> Desarrollo de Software, IoT, Manejo de Hardware, Circuitos y Sistemas Electrónicos, Bioingeniería, Sistemas Eléctricos."
+                    certificate="none"></experiencia-card>
+                <experiencia-card logo="imgs/osinergmin_logo.jpg" empresa="PEU 2025 de Osinergmin" ciudad="Lima"
+                    cargo="Regulación de la Electricidad" fecha="Ene. 2025 - Mar. 2025"
+                    descripcion="Fui seleccionado de entre un gran número de estudiantes de todo el Perú mediante un examen de conocimientos."
+                    proyectos="<strong>Proyecto destacado:</strong> Sistema de trazabilidad para balones de gas en base a tecnología RFID"
+                    tecnologias="<strong>Conocimientos adquiridos:</strong> Sistemas Eléctricos, Mercado Eléctrico Peruano, Normativas."
+                    certificate="https://uc.osinergmin.gob.pe/mod/customcert/verify_certificate.php?code=PfZH1US3SK&qrcode=1"></experiencia-card>
+            </wc-slider>
+            <div class="mas-cursos">
+                <h4>Formación Complementaria</h4>
+                <div class="tarjeta3">
+                    <course-card title="Idioma Inglés" entity="Idiomas PUCP 🏫" logo="imgs/logo-idiomas.webp"
+                        description="Clases virtuales en plataforma Cambridge LMS." hours="Ago. 2020 - Nov. 2024"
+                        skills="Inglés nivel intermedio (writing: B2, speaking: B1)" certificate="none">
+                    </course-card>
+                    <course-card title="Curso de HTML y CSS" entity="Google 🏫" logo="imgs/google.png"
+                        description="Curso intensivo acerca de los fundamentos del desarrollo web con HTML y CSS."
+                        hours="40 horas" skills="HTML, CSS, Responsive Design"
+                        certificate="https://skillshop.exceedlms.com/student/award/1thuWXxee8TX8vkoVd1qtvzn">
+                    </course-card>
+                    <course-card title="Programación Orientada a Objetos con Python"
+                        entity="Coursera 🏫 Universidad Austral" logo="imgs/coursera-logo.png"
+                        description="Diseño de programas con objetos como para diagramar UML; lo que te permitirá diseñar y construir sistemas con objetos, modelando cualquier aspecto de la realidad que desees. Además podrá hacer sistemas de calidad realizando pruebas automáticas del sistema y reestructuraciones del mismo."
+                        hours="8 horas" skills="Python, Algoritmos, POO"
+                        certificate="https://www.coursera.org/account/accomplishments/verify/L6J457V4KXKA">
+                    </course-card>
+                    <course-card title="Estructura de Datos en Python" entity="Coursera 🏫 Universidad Austral"
+                        logo="imgs/coursera-logo.png"
+                        description="Este curso te permitirá realizar programas que trabajen con muchos datos tomados desde archivos de la computadora. Aquí podrás conocer cómo utilizar las estructuras de datos integradas en Python, como las listas, los diccionarios y las tuplas. Además entenderás cómo trabajar con archivos y el manejo de excepciones. "
+                        hours="14 horas"
+                        skills="Scripting, manejo de archivos, excepciones, listas, diccionarios, tuplas"
+                        certificate="https://www.coursera.org/account/accomplishments/verify/KMJTF6CKC2KC">
+                    </course-card>
+                    <course-card title="Mathematics for Machine Learning: Linear Algebra"
+                        entity="Coursera 🏫 Imperial College London" logo="imgs/coursera-logo.png"
+                        description="Curso de matemáticas para machine learning, enfocado en álgebra lineal."
+                        hours="18 horas" skills="Linear Algebra, Algoritmos, Ciencias de Datos, Python"
+                        certificate="https://www.coursera.org/account/accomplishments/certificate/DYVAY8LFR387">
+                    </course-card>
+                    <course-card title="Introduction to the Internet of Things and Embedded Systems"
+                        entity="Coursera 🏫 Caroline Irvine University" logo="imgs/coursera-logo.png"
+                        description="Introducción al Internet de las cosas y los sistemas embebidos." hours="10 horas"
+                        skills="Internet of Things, sistemas integrados, hardware informático"
+                        certificate="https://www.coursera.org/account/accomplishments/certificate/99W5ZARUEQCZ">
+                    </course-card>
+                </div>
+            </div>
+        </section>
+        <section class="section__two">
+            <header id="contact">
+                <h3>Contacto</h3>
+            </header>
+
+            <crono-element title="Momentos Destacados" legend="Vida Académica">
+            </crono-element>
+
+
+
+
+            <h3>+ Sobre mí</h3>
+            <p style="opacity: 0.6;">En construcción...</p>
+            <img src="imgs/gato2.gif" alt="meme sobre trabajar en laptop" style="width: 70px; height: auto;">
+        </section>
+    </article>
+    <footer>
+        <div class="footer">
+            <div class="footer__socials">
+                <a href="https://www.linkedin.com/in/c%C3%A9sar-gustavo-guti%C3%A9rrez-flores-1b54681a9/"><img
+                        src="imgs/linkedin.png" alt="Ícono de Linkedin"></a>
+                <a href="https://github.com/CesarG07"><img src="imgs/github.png" alt="Ícono de Github"></a>
+                <a href=""><img src="imgs/twitterx.png" alt="Ícono de Twitter" title="Aún no disponible"></a>
+            </div>
+            <p id="copy">&copy; 2025 César Gutiérrez Flores. Algunos derechos reservados.</p>
+            <blockquote cite="https://www.biblegateway.com/passage/?search=Salmos%2037&version=RVR1960">
+                <p>"Pon tu vida en las manos del Señor; confía en él, y él vendrá en tu ayuda."</p>
+                <div>
+                    <cite class="author">Salmos 37:5</cite>
+                </div>
+            </blockquote>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
 </html>

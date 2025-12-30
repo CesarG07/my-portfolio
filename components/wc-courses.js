@@ -10,6 +10,7 @@ class CourseCard extends HTMLElement {
         const description = this.getAttribute("description");
         const hours = this.getAttribute("hours");
         const skills = this.getAttribute("skills");
+        const certificate = this.getAttribute("certificate");
 
         shadow.innerHTML = `
             <div class="course-card">
@@ -32,6 +33,12 @@ class CourseCard extends HTMLElement {
                             <span>🛠️</span>
                             <p>Skills: ${skills}</p>
                         </div>
+                        ${certificate && certificate !== "none" ? `
+                        <div class="info-detail">
+                            <span>📜</span>
+                            <p><a href="${certificate}" target="_blank" class="certificate-link">Ver Certificado</a></p>
+                        </div>
+                        ` : ""}
                     </div>
                 </div>
             </div>

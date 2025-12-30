@@ -1,7 +1,7 @@
-class CronoItem extends HTMLElement{
-    constructor(){
+class CronoItem extends HTMLElement {
+    constructor() {
         super();
-        const shadow = this.attachShadow({mode: "open"});
+        const shadow = this.attachShadow({ mode: "open" });
 
         const period = this.getAttribute("period");
         const subtitle = this.getAttribute("subtitle");
@@ -17,6 +17,9 @@ class CronoItem extends HTMLElement{
                     <div class="period">${period}</div>
                     <div class="title">${subtitle}</div>
                     <div class="short">${short}</div>
+                    <div class="expand-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
                 </div>
                 <div class="card" aria-hidden="true">
                     <h3>${episode}</h3>
@@ -25,6 +28,15 @@ class CronoItem extends HTMLElement{
                 </div>
             </div>
         `;
+
+        const event = shadow.querySelector(".event");
+        const card = shadow.querySelector(".card");
+        event.addEventListener("click", () => {
+            const isActive = event.getAttribute("data-active") === "true";
+            event.setAttribute("data-active", !isActive);
+            event.setAttribute("aria-expanded", !isActive);
+            card.setAttribute("aria-hidden", isActive);
+        });
 
         fetch(new URL("wc-crono.css", import.meta.url))
             .then(response => response.text())
@@ -39,10 +51,10 @@ class CronoItem extends HTMLElement{
 
 customElements.define("crono-item", CronoItem);
 
-class CronoElement extends HTMLElement{
-    constructor(){
+class CronoElement extends HTMLElement {
+    constructor() {
         super();
-        const shadow = this.attachShadow({mode: "open"});
+        const shadow = this.attachShadow({ mode: "open" });
 
         const title = this.getAttribute("title");
         const legend = this.getAttribute("legend");

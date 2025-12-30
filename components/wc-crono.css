@@ -1,95 +1,231 @@
-.timeline-wrap{
-    max-width:900px;
-    margin:0 auto;
-    padding:18px;
+.timeline-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 18px;
 }
-.hero{
-    display:flex;
-    align-items:center;
-    gap:16px;
-    margin-bottom:18px;
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
 }
-.hero h1{
-    font-size:20px;
-    margin:0;
+
+.hero h1 {
+    font-size: 20px;
+    margin: 0;
 }
-.legend{
-    font-size:13px;
-    color:#6b7280;
+
+.legend {
+    font-size: 13px;
+    color: #6b7280;
 }
 
 
 /* timeline */
-.timeline{
-    position:relative;
-    padding:28px 12px;
-}
-.axis{
-    position:absolute;
-    left:20px;
-    top:0;
-    bottom:0;
-    width:4px;
-    background:linear-gradient(#7FFFD4, #001f4d);
-    border-radius:4px;
+.timeline {
+    position: relative;
+    padding: 28px 12px;
 }
 
+.axis {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(#7FFFD4, #001f4d);
+    border-radius: 4px;
+}
 
-.events{margin-left:64px;display:flex;flex-direction:column;gap:18px}
+
+.events {
+    margin-left: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px
+}
 
 
-.event{
-position:relative;padding:12px 14px;border-radius:12px;cursor:pointer;outline:none;
-transition:transform .22s ease, box-shadow .22s ease, background-color .22s ease;
-background:transparent;display:flex;align-items:flex-start;gap:12px;
+.event {
+    position: relative;
+    padding: 12px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    outline: none;
+    transition: transform .22s ease, box-shadow .22s ease, background-color .22s ease;
+    background: transparent;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
 }
 
 
 .event:focus,
-.event:hover{
-transform:translateX(6px);
+.event:hover {
+    transform: translateX(6px);
 }
 
 
-.marker{width:14px;height:14px;border-radius:50%;flex:0 0 14px;margin-top:4px;background:#7FFFD4;box-shadow:0 0 0 4px rgba(127,255,212,0.12), 0 6px 18px rgba(0,0,0,0.06)}
+.marker {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    flex: 0 0 14px;
+    margin-top: 4px;
+    background: #7FFFD4;
+    box-shadow: 0 0 0 4px rgba(127, 255, 212, 0.12), 0 6px 18px rgba(0, 0, 0, 0.06)
+}
 
 
-.content{flex:1;min-width:0}
-.period{font-weight:600;color:#001f4d;font-size:15px}
-.title{font-size:14px;color:#001f4d;margin-top:4px}
-.short{font-size:13px;color:#6b7280;}
+.content {
+    flex: 1;
+    min-width: 0
+}
+
+.period {
+    font-weight: 600;
+    color: #001f4d;
+    font-size: 15px
+}
+
+.title {
+    font-size: 14px;
+    color: #001f4d;
+    margin-top: 4px
+}
+
+.short {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.expand-icon {
+    display: none;
+    width: 20px;
+    height: 20px;
+    color: #6b7280;
+    transition: transform 0.3s ease;
+    margin-top: 4px;
+}
+
+.event[data-active="true"] .expand-icon {
+    transform: rotate(180deg);
+}
+
 
 
 /* flyout card shown on hover/focus */
-.card{
-position:absolute;left:-6px;top:-6px;transform:translateX(-100%);min-width:260px;max-width:420px;padding:12px;border-radius:10px;background:white;box-shadow:0 8px 30px rgba(0,0,0,0.12);
-opacity:0;pointer-events:none;transition:opacity .18s ease,transform .18s ease;z-index:10;border:1px solid rgba(0,31,77,0.06)
+.card {
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    transform: translateX(-100%);
+    min-width: 260px;
+    max-width: 420px;
+    padding: 12px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .18s ease, transform .18s ease;
+    z-index: 10;
+    border: 1px solid rgba(0, 31, 77, 0.06)
 }
 
 
 .event:hover .card,
 .event:focus .card,
-.event[data-active="true"] .card{
-opacity:1;pointer-events:auto;transform:translateX(12px);
+.event[data-active="true"] .card {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(12px);
 }
 
 
-.card h3{margin:0 0 6px 0;font-size:15px;color:#001f4d}
-.card p{margin:0;font-size:13px;color:#6b7280;line-height:1.3}
+.card h3 {
+    margin: 0 0 6px 0;
+    font-size: 15px;
+    color: #001f4d
+}
+
+.card p {
+    margin: 0;
+    font-size: 13px;
+    color: #6b7280;
+    line-height: 1.3
+}
 
 
-.meta{margin-top:8px;font-size:12px;color:#001f4d;font-weight:600}
+.meta {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #001f4d;
+    font-weight: 600
+}
 
 
 /* small screen adjustments */
-@media (max-width:640px){
-.timeline{padding-left:12px}
-.axis{left:12px}
-.events{margin-left:48px}
-.card{position:static;transform:none;opacity:1;pointer-events:auto;margin-top:8px}
-.event{flex-direction:column;gap:8px;padding:10px;border-radius:8px;background:linear-gradient(90deg, rgba(127,255,212,0.06), rgba(0,31,77,0.02))}
+@media (max-width:640px) {
+    .timeline {
+        padding-left: 12px
+    }
+
+    .axis {
+        left: 12px
+    }
+
+    .events {
+        margin-left: 48px
+    }
+
+    .event {
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px;
+        border-radius: 8px;
+        background: linear-gradient(90deg, rgba(127, 255, 212, 0.06), rgba(0, 31, 77, 0.02))
+    }
+
+    .expand-icon {
+        display: block;
+        position: absolute;
+        right: 14px;
+        top: 14px
+    }
+
+    .card {
+        position: static;
+        transform: none;
+        opacity: 0;
+        pointer-events: none;
+        margin-top: 0;
+        height: 0;
+        overflow: hidden;
+        transition: opacity .2s ease, margin .2s ease;
+    }
+
+    .event:hover .card,
+    .event:focus .card {
+        opacity: 0;
+        pointer-events: none;
+        transform: none;
+    }
+
+    .event[data-active="true"] .card {
+        opacity: 1;
+        pointer-events: auto;
+        margin-top: 8px;
+        height: auto;
+        transform: none;
+    }
 }
 
 
 /* keyboard hint */
-.hint{margin-top:14px;font-size:13px;color:#6b7280}
+.hint {
+    margin-top: 14px;
+    font-size: 13px;
+    color: #6b7280
+}

@@ -3,8 +3,8 @@ console.log("Aleluya");
 document.addEventListener("DOMContentLoaded", () => {
   const botonPDF = document.getElementById("pdf");
   botonPDF.addEventListener("click", () => {
-      const urlPDF = "tools/CV_CesarGutierrez_esp.pdf";
-      window.open(urlPDF, "_blank");
+    const urlPDF = "tools/CV_CesarGutierrez_esp.pdf";
+    window.open(urlPDF, "_blank");
   });
 });
 
@@ -28,6 +28,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const headerNav = document.getElementById("header-nav");
 
   menuToggle.addEventListener("click", () => {
-      headerNav.classList.toggle("active");
+    headerNav.classList.toggle("active");
   });
 });
+
+async function getProfile() {
+  const response = await fetch("https://api.chess.com/pub/player/CesarGF7");
+  const data = await response.json();
+  console.log(data);
+}
+
+getProfile();

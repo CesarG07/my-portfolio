@@ -8,12 +8,12 @@
     src: url("tools/Poppins/Poppins-Medium.ttf") format("truetype");
 }
 
-article{
+article {
     padding: 0;
     margin: 0;
 }
 
-.article__main{
+.article__main {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -23,13 +23,13 @@ article{
     align-items: center;
 }
 
-.main__text{
+.main__text {
     width: 70%;
     max-width: 840px;
     margin: 0 30px 0 20px;
 }
 
-.main__text h1{
+.main__text h1 {
     color: navy;
     font-weight: 700;
     font-size: 3rem;
@@ -38,17 +38,17 @@ article{
     font-family: "Poppins";
 }
 
-.main__text p{
+.main__text p {
     text-wrap: balance;
     color: navy;
 }
 
-.main__text strong{
+.main__text strong {
     color: green;
     background-color: aquamarine;
 }
 
-.main__text button{
+.main__text button {
     background-color: darkblue;
     color: aquamarine;
     border: none;
@@ -59,11 +59,12 @@ article{
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-.main__text button:hover{
+
+.main__text button:hover {
     background-color: blue;
 }
 
-.main__img{
+.main__img {
     width: 30%;
     height: auto;
     margin-right: 20px;
@@ -73,7 +74,7 @@ article{
     padding: 10px 0;
 }
 
-.main__img img{
+.main__img img {
     width: 100%;
     height: auto;
     aspect-ratio: 1;
@@ -82,7 +83,7 @@ article{
     transition: all 0.3s ease-in-out;
 }
 
-.section__one{
+.section__one {
     max-width: 1200px;
     margin: auto;
     padding: 30px 20px;
@@ -92,7 +93,7 @@ article{
     background-color: navy;
 }
 
-.section__one header{
+.section__one header {
     font-size: 1.5rem;
     font-weight: 600;
     color: aquamarine;
@@ -103,27 +104,24 @@ article{
     font-family: "Poppins";
 }
 
-.exp{
+.exp {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
+    margin-bottom: 20px;
 }
 
-.mas-cursos{
+.mas-cursos {
     width: 80%;
     max-width: 1200px;
     margin: auto;
     margin-top: 20px;
 }
 
-.mas-cursos h4{
+.mas-cursos h4 {
     color: aquamarine;
     padding-bottom: 10px;
 }
 
-.section__two{
+.section__two {
     max-width: 1200px;
     margin: auto;
     padding: 30px 20px;
@@ -132,7 +130,7 @@ article{
     gap: 20px;
 }
 
-.section__two header{
+.section__two header {
     font-size: 1.5rem;
     font-weight: 600;
     color: navy;
